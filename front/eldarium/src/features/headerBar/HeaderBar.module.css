@@ -1,0 +1,18 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tab {
+    border: solid 1px white;
+    padding: 20px;
+    width: 100%;
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+}
