@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom" ;
 
 import { Home } from "../home/Home" ;
@@ -7,48 +8,32 @@ import { Game } from "../game/Game" ;
 import { Irl } from "../irl/Irl" ;
 
 import styles from './HeaderBar.module.css' ;
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button' ;
+
+import { Grid, Tab, Tabs } from '@mui/material' ;
 
 export function HeaderBar() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event: any, newValue: number) => {
+    setValue(newValue);
+  };
   return (
     <Router>
       <div>
-        {/* <Stack spacing={2} direction="row">
-            <div className={styles.tab}>
-                <Button>Primary</Button>
-                <Link to="/" className={styles.link}>Home</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/history" className={styles.link}>History</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/story" className={styles.link}>Stories</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/game" className={styles.link}>Mini Game</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/irl" className={styles.link}>IRL</Link>
-            </div>
-        </Stack> */}
-          <div className={styles.row}>
-            <div className={styles.tab}>
-                <Link to="/" className={styles.link}>Home</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/history" className={styles.link}>History</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/story" className={styles.link}>Stories</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/game" className={styles.link}>Mini Game</Link>
-            </div>
-            <div className={styles.tab}>
-                <Link to="/irl" className={styles.link}>IRL</Link>
-            </div>
-          </div>
+      <Grid container spacing={2}>
+        <Grid item xs={2}>
+          <img className={styles.logo} src="/images/logo3.png" alt="eldariumLogo" loading="lazy"/>
+        </Grid>
+        <Grid item xs={10}>
+          <Tabs value={value} onChange={handleChange} aria-label="nav tabs" TabIndicatorProps={{style: {background:'white', color: 'white'}}}>
+            <Tab label="Home" to="/" component={Link}></Tab>
+            <Tab label="History" to="/history" component={Link}></Tab>
+            <Tab label="Story" to="/story" component={Link}></Tab>
+            <Tab label="Game" to="/game" component={Link}></Tab>
+            <Tab label="IRL" to="/irl" component={Link}></Tab>
+          </Tabs>
+        </Grid>
+      </Grid>
         <Switch>
           <Route path="/history">
             <History />
