@@ -25,7 +25,7 @@ export function HeaderBar() {
           <img className={styles.logo} src="/images/logo3.png" alt="eldariumLogo" loading="lazy"/>
         </Grid>
         <Grid item xs={10}>
-          <Tabs value={value} onChange={handleChange} aria-label="nav tabs" TabIndicatorProps={{style: {background:'white', color: 'white'}}}>
+          <Tabs value={value} onChange={handleChange} aria-label="nav tabs" TabIndicatorProps={{style: {background:'#000e44', color: 'white'}}}>
             <Tab label="Home" to="/" component={Link}></Tab>
             <Tab label="History" to="/history" component={Link}></Tab>
             <Tab label="Story" to="/story" component={Link}></Tab>
