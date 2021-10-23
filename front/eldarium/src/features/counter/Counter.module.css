@@ -54,10 +54,10 @@
   background-color: rgba(112, 76, 182, 0.2);
 }
 
-.asyncButton {
+/* .asyncButton {
   composes: button;
   position: relative;
-}
+} */
 
 .asyncButton:after {
   content: '';

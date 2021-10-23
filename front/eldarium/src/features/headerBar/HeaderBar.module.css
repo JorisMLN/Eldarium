@@ -1,18 +1,24 @@
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .tab {
-    border: solid 1px white;
-    padding: 20px;
-    width: 100%;
-    background-color: #2d2d2d;
-    color: white;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 20px;
+  width: 100%;
+  background-color: #263238;
+  color: white;
+}
+
+.tab:hover {
+  border: solid 1px rgb(51, 51, 51);
+  background-color: #37474f;
 }
 
 .link {
-    color: white;
-    font-weight: bold;
+  color: #90caf9;
+  font-weight: bold;
+  text-decoration: none;
 }

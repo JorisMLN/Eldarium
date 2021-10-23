@@ -37,13 +37,13 @@ export function HeaderBar() {
                 <Link to="/" className={styles.link}>Home</Link>
             </div>
             <div className={styles.tab}>
-                <Link to="/history" className={styles.link}>History</Link>
+                <Link to="/history" className={styles.link}>Our Story</Link>
             </div>
             <div className={styles.tab}>
-                <Link to="/story" className={styles.link}>Stories</Link>
+                <Link to="/story" className={styles.link}>Eldar Chronicles</Link>
             </div>
             <div className={styles.tab}>
-                <Link to="/game" className={styles.link}>Mini Game</Link>
+                <Link to="/game" className={styles.link}>Vingilot Studio</Link>
             </div>
             <div className={styles.tab}>
                 <Link to="/irl" className={styles.link}>IRL</Link>
