@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DevProjetWeb\\Eldarium\\back\\back.csproj": {}
+    "C:\\JorisMonleon\\ProjetPersoTest\\Eldarium\\back\\back.csproj": {}
   },
   "projects": {
-    "D:\\DevProjetWeb\\Eldarium\\back\\back.csproj": {
+    "C:\\JorisMonleon\\ProjetPersoTest\\Eldarium\\back\\back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevProjetWeb\\Eldarium\\back\\back.csproj",
+        "projectUniqueName": "C:\\JorisMonleon\\ProjetPersoTest\\Eldarium\\back\\back.csproj",
         "projectName": "back",
-        "projectPath": "D:\\DevProjetWeb\\Eldarium\\back\\back.csproj",
-        "packagesPath": "C:\\Users\\bibou\\.nuget\\packages\\",
-        "outputPath": "D:\\DevProjetWeb\\Eldarium\\back\\obj\\",
+        "projectPath": "C:\\JorisMonleon\\ProjetPersoTest\\Eldarium\\back\\back.csproj",
+        "packagesPath": "C:\\Users\\JorisMonleon\\.nuget\\packages\\",
+        "outputPath": "C:\\JorisMonleon\\ProjetPersoTest\\Eldarium\\back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bibou\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JorisMonleon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

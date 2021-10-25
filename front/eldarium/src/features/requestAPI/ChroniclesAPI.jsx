@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
 export function ChroniclesAPI() {
-  const URL = 'http://loacalhost:5000/Chronicles';
+  const URL = 'http://localhost:5000/chronicle';
 
   useEffect(() => {
-    async function chroniclesRequest(){
+    const chroniclesRequest = async () => {
       try {
         const response = await fetch(URL);
         const jsonRes = await response.json();
