@@ -14,7 +14,7 @@ export function ChroniclesAPI() {
       }
     }
     chroniclesRequest();
-  });
+  }, []);
 
   return (
       <div>Chronicles Request</div>
