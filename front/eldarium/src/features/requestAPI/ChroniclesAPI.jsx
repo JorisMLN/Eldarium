@@ -10,7 +10,7 @@ export function ChroniclesAPI() {
         const jsonRes = await response.json();
         console.log(jsonRes);
       } catch {
-        console.log(err);
+        console.error();
       }
     }
     chroniclesRequest();

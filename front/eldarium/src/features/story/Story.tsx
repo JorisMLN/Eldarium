@@ -1,5 +1,9 @@
+import { ChroniclesAPI } from "../requestAPI/ChroniclesAPI";
+
 export function Story() {
     return (
-        <div>Story</div>
+        <div>Story
+            <ChroniclesAPI />
+        </div>
     ) ;
 }
