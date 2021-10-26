@@ -3,12 +3,12 @@ import { useState } from 'react'
 
 export function ChroniclesAPI() {
   const URL = 'http://localhost:5000/chronicle/';
-  const [box, updateBox] = useState(0)
+  const [eldarId, updateEldarId] = useState(null)
 
   useEffect(() => {
     const chroniclesRequest = async () => {
       try {
-        const response = await fetch(URL + box);
+        const response = await fetch(`${URL}${eldarId ? eldarId : ''}`);
         const jsonRes = await response.json();
         console.log(jsonRes);
       } catch {
@@ -16,14 +16,14 @@ export function ChroniclesAPI() {
       }
     }
     chroniclesRequest();
-  }, [box]);
+  }, [eldarId]);
 
   return (
     <div>
       <div>Chronicles Request</div>
-      <button onClick={() => updateBox(box + 1)}> Chapter + 1 </button>
-      <button onClick={() => updateBox(box - 1)}> Chapter - 1 </button>
-      <div>le chapitre: {box}</div>
+      <button onClick={() => updateEldarId(eldarId + 1)}> Chapter + 1 </button>
+      <button onClick={() => updateEldarId(eldarId - 1)}> Chapter - 1 </button>
+      <div>le chapitre: {eldarId}</div>
     </div>
   ) ;
 }
