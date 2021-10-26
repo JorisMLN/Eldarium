@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom" ;
 
-import { Home } from "../home/Home" ;
-import { History } from "../history/History" ;
-import { Story } from "../story/Story" ;
-import { Game } from "../game/Game" ;
-import { Irl } from "../irl/Irl" ;
+import { Home } from "../routes/home/Home" ;
+import { History } from "../routes/history/History" ;
+import { Story } from "../routes/story/Story" ;
+import { Game } from "../routes/game/Game" ;
+import { Irl } from "../routes/irl/Irl" ;
 
 import styles from './HeaderBar.module.css' ;
 

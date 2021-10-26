@@ -1,4 +1,4 @@
-import { ChroniclesAPI } from "../requestAPI/ChroniclesAPI";
+import { ChroniclesAPI } from "../../requestAPI/ChroniclesAPI";
 
 export function Story() {
     return (

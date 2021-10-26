@@ -1,5 +1,5 @@
 import React from 'react' ;
-import { HeaderBar } from './features/headerBar/HeaderBar' ;
+import { HeaderBar } from './components/headerBar/HeaderBar' ;
 import './App.css' ;
 
 function App() {
