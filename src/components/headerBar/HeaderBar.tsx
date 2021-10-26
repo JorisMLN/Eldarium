@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom" ;
 
 import { Home } from "../routes/home/Home" ;
 import { History } from "../routes/history/History" ;
-import { Story } from "../routes/story/Story" ;
+import { Chronicle } from "../routes/chronicle/Chronicle" ;
 import { Game } from "../routes/game/Game" ;
 import { Irl } from "../routes/irl/Irl" ;
 
@@ -12,11 +12,25 @@ import styles from './HeaderBar.module.css' ;
 import { Grid, Tab, Tabs } from '@mui/material' ;
 
 export function HeaderBar() {
+  const routes = [
+    { label: 'Home', path: '/' },
+    { label: 'History', path: '/history' },
+    { label: 'Chronicle', path: '/chronicle' },
+    { label: 'Game', path: '/game' },
+    { label: 'IRL', path: '/irl' }
+  ] ;
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: any, newValue: number) => {
     setValue(newValue);
   };
+
+  useEffect(() => {
+    const path = window.location.pathname ;
+    setValue(routes.map(route => route.path).indexOf(path)) ;
+  }, []);
+  // }, [value,]); if we need to use it more than once
+
   return (
     <Router>
       <div>
@@ -26,11 +40,9 @@ export function HeaderBar() {
         </Grid>
         <Grid item xs={10}>
           <Tabs value={value} onChange={handleChange} aria-label="nav tabs" TabIndicatorProps={{style: {background:'#000e44', color: 'white'}}}>
-            <Tab label="Home" to="/" component={Link}></Tab>
-            <Tab label="History" to="/history" component={Link}></Tab>
-            <Tab label="Story" to="/story" component={Link}></Tab>
-            <Tab label="Game" to="/game" component={Link}></Tab>
-            <Tab label="IRL" to="/irl" component={Link}></Tab>
+            {routes.map((item, index) => {
+              return <Tab key={index} label={item.label} to={item.path} component={Link}></Tab>
+            })}
           </Tabs>
         </Grid>
       </Grid>
@@ -38,8 +50,8 @@ export function HeaderBar() {
           <Route path="/history">
             <History />
           </Route>
-          <Route path="/story">
-            <Story />
+          <Route path="/chronicle">
+            <Chronicle />
           </Route>
           <Route path="/game">
             <Game />

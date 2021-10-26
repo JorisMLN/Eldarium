@@ -1,8 +1,8 @@
 import { ChroniclesAPI } from "../../requestAPI/ChroniclesAPI";
 
-export function Story() {
+export function Chronicle() {
     return (
-        <div>Story
+        <div>Chronicle
             <ChroniclesAPI />
         </div>
     ) ;
