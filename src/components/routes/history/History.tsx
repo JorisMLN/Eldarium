@@ -59,6 +59,7 @@ export function History() {
                     Code
                 </Typography>
                 <Typography>Because it&apos;s awesome!</Typography>
+                <Typography>... And because i want my PROTO !</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
