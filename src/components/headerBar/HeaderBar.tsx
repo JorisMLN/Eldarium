@@ -27,7 +27,8 @@ export function HeaderBar() {
             <img className={styles.logo} src="/images/logo3.png" alt="eldariumLogo" loading="lazy"/>
           </Grid>
           <Grid item xs={10}>
-            <Tabs value={value} onChange={handleChange} aria-label="nav tabs" TabIndicatorProps={{style: {background:'#000e44', color: 'white'}}}>
+            {/* To change Tabs Indicator css :  TabIndicatorProps={{style: {background:'#000e44'}}} */}
+            <Tabs value={value} onChange={handleChange} aria-label="nav tabs">
               {routes.map((item, index) => {
                 return <Tab key={index} label={item.label} to={item.path} component={Link}></Tab>
               })}
