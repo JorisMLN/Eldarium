@@ -59,7 +59,7 @@ export function History() {
                     Code
                 </Typography>
                 <Typography>Because it&apos;s awesome!</Typography>
-                <Typography>... And because i want my PROTO !</Typography>
+                <Typography style={{ fontWeight: 'bold', textDecoration: 'underline' }}>... And because i want my PROTO !</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
