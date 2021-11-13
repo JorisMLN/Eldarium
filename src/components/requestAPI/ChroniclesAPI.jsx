@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useState } from 'react'
 
 export function ChroniclesAPI() {
-  const URL = 'http://localhost:5000/chronicle/';
+  // const URL = 'http://localhost:5000/chronicle/';
+  const URL = 'https://telperion-2021.web.app/chronicles/' ;
   const [eldarId, updateEldarId] = useState(null)
 
   useEffect(() => {
