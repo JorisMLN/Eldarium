@@ -1,0 +1,20 @@
+.story-left {
+    text-align: start;
+    margin-left: 3%;
+    margin-right: 30%
+}
+
+.story-right {
+    text-align: end;
+    margin-right: 3%;
+    margin-left: 30%
+}
+
+.next-chapter-button {
+    float: right;
+    /* margin-left: 3%; */
+}
+
+.previous-chapter-button {
+    float: left;
+}

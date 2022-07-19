@@ -2,7 +2,7 @@ import { ChroniclesAPI } from "../../requestAPI/ChroniclesAPI";
 
 export function Chronicle() {
     return (
-        <div>Chronicle
+        <div>
             <ChroniclesAPI />
         </div>
     ) ;
