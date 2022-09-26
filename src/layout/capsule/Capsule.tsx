@@ -57,7 +57,7 @@ const Capsule : React.FC = () => {
             <Tab label="Guild History" className='tabs'/>
             <Tab label="Media"  className='tabs'/>
             <Tab label="Chronicles"  className='tabs'/>
-            <Tab label="Vingilot Studio"  className='tabs'/>
+            <Tab label="Vingilot Studio GameDev"  className='tabs'/>
             <Tab label="In Real Life"  className='tabs'/>
             <Tab label="Credits"  className='tabs'/>
           </Tabs>

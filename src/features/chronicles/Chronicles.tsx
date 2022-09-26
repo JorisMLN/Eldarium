@@ -5,7 +5,8 @@ const Chronicles : React.FC = () => {
   return(
     <>
       <div className="chronicles">
-        test C H R O N I C L E S
+        <h1> C H R O N I C L E S </h1>
+        <p>Coming soon</p>
       </div>
     </>
   )

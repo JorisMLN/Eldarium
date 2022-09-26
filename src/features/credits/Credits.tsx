@@ -5,7 +5,8 @@ const Credits : React.FC = () => {
   return(
     <>
       <div className="credits">
-        test C R E D I T S
+        <h1> C R E D I T S </h1>
+        <p>Coming soon</p>
       </div>
     </>
   )

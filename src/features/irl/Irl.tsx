@@ -5,7 +5,8 @@ const Irl : React.FC = () => {
   return(
     <>
       <div className="irl">
-        test I R L
+        <h1> I R L </h1>
+        <p>Coming soon</p>
       </div>
     </>
   )
