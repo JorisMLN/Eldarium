@@ -1,0 +1,34 @@
+@import "./../../styles/variables.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.capsule{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #9b4b4b;
+  height: 100vh;
+
+  .logoName{
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .tabs{
+    color: white;
+    height: 100%;
+  }
+
+  .tabPanel{
+    color: white;
+    background-color: #121212;
+    width: 85%;
+  }
+}
