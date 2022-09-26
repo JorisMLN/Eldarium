@@ -60,6 +60,7 @@ const Capsule : React.FC = () => {
             <Tab label="Vingilot Studio GameDev"  className='tabs'/>
             <Tab label="In Real Life"  className='tabs'/>
             <Tab label="Credits"  className='tabs'/>
+
           </Tabs>
 
           <TabPanel value={value} index={1} className='tabPanel'>

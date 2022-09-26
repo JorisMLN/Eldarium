@@ -5,7 +5,8 @@ const Vingilot : React.FC = () => {
   return(
     <>
       <div className="vingilot">
-        test V I N G I L O T
+        <h1> V I N G I L O T - S T U D I O </h1>
+        <p>Coming soon</p>
       </div>
     </>
   )
