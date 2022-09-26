@@ -1,7 +1,10 @@
 @import './../../styles/variables.scss';
 
 .media{
-  border: 1px solid red;
+
   width: 99%;
-  min-height: 4000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
