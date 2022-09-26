@@ -49,7 +49,7 @@ const Capsule : React.FC = () => {
       <div className='capsule'>
         <Box sx={{ flexGrow: 1, bgcolor: '#121212', display: 'flex', height: 224 }}>
           <Tabs orientation="vertical" variant="scrollable" value={value} onChange={handleChange} 
-            aria-label="Vertical tabs example" sx={{ width: 300, borderRight: 1, borderColor: '#ffffff', backgroundColor: '#000000' }}>
+            aria-label="Vertical tabs example" sx={{ width: 300, backgroundColor: '#000000' }}>
 
             <img className='logoName' src={logoName}></img>
 
