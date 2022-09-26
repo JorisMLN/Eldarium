@@ -8,6 +8,12 @@ import Box from '@mui/material/Box';
 
 import ContentCapsule from './../contentCapsule/contentCapsule';
 import Home from './../../features/home/Home';
+import GuildHistory from './../../features/guildHistory/GuildHistory';
+import Media from './../../features/media/Media';
+import Chronicles from './../../features/chronicles/Chronicles';
+import Vingilot from './../../features/vingilot/Vingilot';
+import Irl from './../../features/irl/Irl';
+import Credits from './../../features/credits/Credits';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -60,22 +66,22 @@ const Capsule : React.FC = () => {
             <ContentCapsule child={<Home />} name={'Home'} />
           </TabPanel>
           <TabPanel value={value} index={2} className='tabPanel'>
-            Item Two
+            <ContentCapsule child={<GuildHistory />} name={'Guild History'} />
           </TabPanel>
           <TabPanel value={value} index={3} className='tabPanel'>
-            Item Three
+            <ContentCapsule child={<Media />} name={'Media'} />
           </TabPanel>
           <TabPanel value={value} index={4} className='tabPanel'>
-            Item Four
+            <ContentCapsule child={<Chronicles />} name={'Chronicles'} />
           </TabPanel>
           <TabPanel value={value} index={5} className='tabPanel'>
-            Item Five
+            <ContentCapsule child={<Vingilot />} name={'Vingilot Studio'} />
           </TabPanel>
           <TabPanel value={value} index={6} className='tabPanel'>
-            Item Six
+            <ContentCapsule child={<Irl />} name={'In Real Life'} />
           </TabPanel>
           <TabPanel value={value} index={7} className='tabPanel'>
-            Item Seven
+            <ContentCapsule child={<Credits />} name={'Credits'} />
           </TabPanel>
         </Box>
       </div>

@@ -4,8 +4,8 @@ import './home.scss';
 const Home : React.FC = () => {
   return(
     <>
-      <div id="contentOne" className="home">
-        test Home
+      <div className="home">
+        test H O M E
       </div>
     </>
   )
