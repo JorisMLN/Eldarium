@@ -1,6 +1,6 @@
 import React from 'react';
 import './contentCapsule.scss';
-import Header from './../header/Header';
+import Header from '../header/Header';
 
 interface ComponentsProps {
   child: any

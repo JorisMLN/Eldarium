@@ -6,7 +6,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import ContentCapsule from './../contentCapsule/contentCapsule';
+import ContentCapsule from '../contentCapsule/ContentCapsule';
 import Home from './../../features/home/Home';
 import GuildHistory from './../../features/guildHistory/GuildHistory';
 import Media from './../../features/media/Media';
