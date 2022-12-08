@@ -11,7 +11,7 @@ import Home from './../../features/home/Home';
 import GuildHistory from './../../features/guildHistory/GuildHistory';
 import Media from './../../features/media/Media';
 import Chronicles from './../../features/chronicles/Chronicles';
-import Vingilot from './../../features/vingilot/Vingilot';
+import Makka from '../../features/gameDev/Makka';
 import Irl from './../../features/irl/Irl';
 import Credits from './../../features/credits/Credits';
 
@@ -47,8 +47,8 @@ const Capsule : React.FC = () => {
   return (
     <>
       <div className='capsule'>
-        <Box sx={{ flexGrow: 1, bgcolor: '#121212', display: 'flex', height: 224 }}>
-          <Tabs orientation="vertical" variant="scrollable" value={value} onChange={handleChange} 
+        <Box sx={{ flexGrow: 1, bgcolor: '#121212', display: 'flex', height: 224}}>
+          <Tabs id='tabsDom' orientation="vertical" variant="scrollable" value={value} onChange={handleChange} 
             aria-label="Vertical tabs example" sx={{ width: 300, backgroundColor: '#000000' }}>
 
             <img className='logoName' src={logoName}></img>
@@ -57,7 +57,7 @@ const Capsule : React.FC = () => {
             <Tab label="Guild History" className='tabs'/>
             <Tab label="Media"  className='tabs'/>
             <Tab label="Chronicles"  className='tabs'/>
-            <Tab label="Vingilot Studio GameDev"  className='tabs'/>
+            <Tab label="Makka Studio" className='tabs' />
             <Tab label="In Real Life"  className='tabs'/>
             <Tab label="Credits"  className='tabs'/>
 
@@ -76,7 +76,7 @@ const Capsule : React.FC = () => {
             <ContentCapsule child={<Chronicles />} name={'Chronicles'} />
           </TabPanel>
           <TabPanel value={value} index={5} className='tabPanel'>
-            <ContentCapsule child={<Vingilot />} name={'Vingilot Studio'} />
+            <ContentCapsule child={<Makka />} name={'Makka Studio'} />
           </TabPanel>
           <TabPanel value={value} index={6} className='tabPanel'>
             <ContentCapsule child={<Irl />} name={'In Real Life'} />
